@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("./images/bg-intro-mobile.png"), hsl(0, 100%, 74%);
+}
+
+body .container {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+article,
+.form__container .subscription__info,
+.form__container p {
+  text-align: center;
+}
+
+article {
+  line-height: 1.8;
+  color: #fff;
+}
+
+article h1 {
+  margin: 5rem auto 1rem;
+}
+
+article p {
+  margin-bottom: 3rem;
+}
+
+.form__container {
+    margin-bottom: 6rem;
+}
+
+.form__container .subscription__info {
+  padding: 1rem 3rem;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.subscription__info > p span {
+    font-weight: 700;
+} 
+
+form,
+.form__container .subscription__info {
+    box-shadow: 0 10px 3px rgba(0, 0, 0, 0.252);
+}
+
+form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+form button {
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.42);
+    letter-spacing: 1px;
+
+}
+
+form input,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+form input {
+  border: 1px solid #8080804b;
+  outline: none;
+}
+
+form p {
+    color: hsl(246, 25%, 77%);
+    font-size: .7rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding: 0 1rem
+}
+
+form > p span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  body .container {
+    display: flex;
+  }
+}
