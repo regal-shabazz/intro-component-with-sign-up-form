@@ -234,3 +234,9 @@ label img {
     width: 20px;
   }
 }
+
+@media screen and (max-height: 750px) {
+  body .container {
+    min-height: 130vh;
+  }
+}
