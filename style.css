@@ -144,7 +144,7 @@ label img {
 }
 
 .error-icon {
-  display: none;
+  display: block;
 }
 
 

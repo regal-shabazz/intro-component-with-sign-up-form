@@ -13,11 +13,13 @@ const isEmail = (email) => {
 const error = ($input, errorMessage) => {
     $input.parentNode.classList.add('error');
     $input.parentNode.nextElementSibling.innerText = errorMessage;
+    $input.parentNode.querySelector('img').style.display = 'block';
 }
 
 const clearError = ($input) => {
     $input.parentNode.classList.remove('error');
     $input.parentNode.nextElementSibling.innerText = "";
+    $input.parentNode.querySelector('img').style.display = 'none';
 }
 
 const validate = () => {
