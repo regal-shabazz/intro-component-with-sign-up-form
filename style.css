@@ -86,7 +86,7 @@ label img { /* error icon */
   width: 15px;
 }
 
-form label + p { /* error message */
+.error__message { /* error message */
   color: hsl(0, 100%, 74%);
   text-align: end;
   font-style: italic;
@@ -135,9 +135,15 @@ form > p span {
   font-weight: 700;
 }
 
-
-form label + p,
 label img {
+  display: none;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-icon {
   display: none;
 }
 

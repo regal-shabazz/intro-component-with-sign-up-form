@@ -39,8 +39,8 @@
 
         <form action="">
           <div>
-            <div>
-              <label for="first__name">
+            <div class="form__field">
+              <label for="first__name" class="">
                 <input
                   type="text"
                   name="first__name"
@@ -50,11 +50,11 @@
                 <img src="./images/icon-error.svg" alt="error icon" />
               </label>
 
-              <p>First Name cannot be empty</p>
+              <p class="error__message"></p>
             </div>
 
-            <div>
-              <label for="last__name">
+            <div class="form__field">
+              <label for="last__name" class="">
                 <input
                   type="text"
                   name="last__name"
@@ -64,24 +64,24 @@
                 <img src="./images/icon-error.svg" alt="error icon" />
               </label>
 
-              <p>Last Name cannot be empty</p>
+              <p class="error__message"></p>
             </div>
 
-            <div>
-              <label for="email"
+            <div class="form__field">
+              <label for="email" class=""
                 ><input
-                  type="email"
+                  type="text"
                   name="email"
                   id="email"
                   placeholder="Email Address" />
                 <img src="./images/icon-error.svg" alt="error icon"
               /></label>
 
-              <p>Email Address cannot be empty</p>
+              <p class="error__message"></p>
             </div>
 
-            <div>
-              <label for="pass__word">
+            <div class="form__field">
+              <label for="pass__word" class="">
                 <input
                   type="password"
                   name="pass__word"
@@ -91,7 +91,7 @@
                 <img src="./images/icon-error.svg" alt="error icon" />
               </label>
 
-              <p>Password cannot be empty</p>
+              <p class="error__message"></p>
             </div>
           </div>
           <button type="submit">Claim your free trial</button>
@@ -102,5 +102,7 @@
         </form>
       </div>
     </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
