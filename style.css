@@ -20,8 +20,7 @@ body .container {
 }
 
 article,
-.form__container .subscription__info,
-.form__container p {
+.form__container .subscription__info {
   text-align: center;
 }
 
@@ -39,7 +38,7 @@ article p {
 }
 
 .form__container {
-    margin-bottom: 6rem;
+  margin-bottom: 6rem;
 }
 
 .form__container .subscription__info {
@@ -51,12 +50,12 @@ article p {
 }
 
 .subscription__info > p span {
-    font-weight: 700;
-} 
+  font-weight: 700;
+}
 
 form,
 .form__container .subscription__info {
-    box-shadow: 0 10px 3px rgba(0, 0, 0, 0.252);
+  box-shadow: 0 10px 3px rgba(0, 0, 0, 0.252);
 }
 
 form {
@@ -65,82 +64,123 @@ form {
   border-radius: 10px;
 }
 
-form button {
-    border: none;
-    background-color: hsl(154, 59%, 51%);
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.42);
-    letter-spacing: 1px;
+form > div div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  border: 1px solid #8080804b;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  margin-bottom: .2rem;
+}
+
+label input,
+label img {
+  display: block;
+}
+
+label img { /* error icon */
+  width: 15px;
+}
+
+form label + p { /* error message */
+  color: hsl(0, 100%, 74%);
+  text-align: end;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+form input {
+  padding-right: 1rem;
+  border: none;
+  outline: none;
 }
 
 form input,
 form button {
-  display: block;
   width: 100%;
-  margin-bottom: 1rem;
-  padding: 1rem;
   border-radius: 5px;
 }
 
-form input {
-  border: 1px solid #8080804b;
-  outline: none;
+form button {
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.42);
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 1rem;
 }
 
-form p {
-    color: hsl(246, 25%, 77%);
-    font-size: .7rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    padding: 0 1rem
+form button:hover {
+  background-color: hsl(156, 58%, 69%);
+}
+
+form > p { /* terms and conditions paragraph */
+  color: hsl(246, 25%, 77%);
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 0;
+  text-align: center;
 }
 
 form > p span {
-    color: hsl(0, 100%, 74%);
-    font-weight: 700;
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
 }
 
 
+form label + p,
+label img {
+  display: none;
+}
 
-@media screen and (min-width:769px) and (max-width: 1024px) {
-    body {
-        background-image: url("./images/bg-intro-desktop.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
 
-      body .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 100vh;
-        width: 90%;
-      }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-      article {
-        text-align: start;
-        width: 45%;
-        padding-right: 2rem;
-      }
+  body .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    width: 90%;
+  }
 
-      article h1 {
-        font-size: 2rem;
-      }
+  article {
+    text-align: start;
+    width: 50%;
+    padding-right: 2rem;
+  }
 
-      article p {
-        font-size: .8rem;
-      }
+  article h1 {
+    font-size: 2.5rem;
+  }
 
-      .form__container .subscription__info {
-        font-size: .9rem;
-      }
+  article p {
+    font-size: 0.8rem;
+  }
+  .form__container {
+    width: 45%;
+  }
+  .form__container .subscription__info {
+    font-size: 0.9rem;
+  }
 
-      form {
-        padding: 1.5rem;
-      }
+  form {
+    padding: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -176,7 +216,15 @@ form > p span {
     padding: 2rem;
   }
 
-  form input {
-    padding: 1rem 2rem;
+  label {
+    padding: 0 auto
+  }
+
+  /* form input {
+    padding: .5rem 1rem;
+  } */
+
+  label img {
+    width: 20px;
   }
 }

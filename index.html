@@ -14,7 +14,7 @@
 
     <title>Intro component with sign up form</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
@@ -39,10 +39,60 @@
 
         <form action="">
           <div>
-            <input type="text" name="" id="" placeholder="First Name"/>
-            <input type="text" name="" id="" placeholder="Last Name"/>
-            <input type="email" name="" id="" placeholder="Email Address"/>
-            <input type="password" name="" id="" placeholder="Password"/>
+            <div>
+              <label for="first__name">
+                <input
+                  type="text"
+                  name="first__name"
+                  id="first__name"
+                  placeholder="First Name"
+                />
+                <img src="./images/icon-error.svg" alt="error icon" />
+              </label>
+
+              <p>First Name cannot be empty</p>
+            </div>
+
+            <div>
+              <label for="last__name">
+                <input
+                  type="text"
+                  name="last__name"
+                  id="last__name"
+                  placeholder="Last Name"
+                />
+                <img src="./images/icon-error.svg" alt="error icon" />
+              </label>
+
+              <p>Last Name cannot be empty</p>
+            </div>
+
+            <div>
+              <label for="email"
+                ><input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address" />
+                <img src="./images/icon-error.svg" alt="error icon"
+              /></label>
+
+              <p>Email Address cannot be empty</p>
+            </div>
+
+            <div>
+              <label for="pass__word">
+                <input
+                  type="password"
+                  name="pass__word"
+                  id="pass__word"
+                  placeholder="Password"
+                />
+                <img src="./images/icon-error.svg" alt="error icon" />
+              </label>
+
+              <p>Password cannot be empty</p>
+            </div>
           </div>
           <button type="submit">Claim your free trial</button>
           <p>
@@ -52,7 +102,5 @@
         </form>
       </div>
     </div>
-
-       
   </body>
 </html>
